@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Input Atribut, checkbox & radio</title>
+</head>
+
+<body>
+  <h1>Contoh Input Atribut, checkbox & radio</h1>
+
+  <form>
+    <label for="name">Nama:
+      <input type="text" name="nama" id="nama" placeholder="Masukkan nama" autocomplete="off" autofocus required>
+    </label>
+    <br>
+    <label for="Email">Email:
+      <input type="email" name="email" id="Email" placeholder="Masukkan email" autocomplete="off" autofocus required>
+    </label>
+    <br>
+    <label for="Password">Password:
+      <input type="password" name="password" id="Password" placeholder="Masukkan password" autocomplete="off" autofocus required>
+    </label>
+    <br>
+    <label for="Angka">Angka:
+      <input type="number" name="number" id="number" min="0" max="100">
+    </label>
+    <br>
+    <label for="tanggal">Tanggal:
+        <input type="date" name="tanggal" id="tanggal">
+    </label>
+    <br>
+    <label for="warna">pilih warna:
+        <input type="color" name="warna" id="warna">
+    </label>
+
+    <h3>Hobby:</h3>
+    <label for="hobby1">
+      <input type="checkbox" name="hobby1" id="hobby1" value="olahraga" checked>
+      Olahraga
+    </label>
+    <br>
+    <label for="hobby2">
+      <input type="checkbox" name="hobby2" id="hobby2" value="ngoding">
+      Ngoding
+    </label>
+    <br>
+    <label for="hobby3">
+      <input type="checkbox" name="hobby3" id="hobby3" value="baca buku">
+      Baca Buku
+    </label>
+
+    <h3>Jenis Kelamin:</h3>
+    <label for="pria">
+      <input type="radio" name="jenis_kelamin" id="pria" value="pria" checked>
+      Pria
+    </label>
+    <br>
+    <label for="wanita">
+      <input type="radio" name="jenis_kelamin" id="wanita" value="wanita">
+      Wanita
+    </label>
+
+    <br>
+    <button type="submit">Kirim!</button>
+  </form>
+</body>
+
+</html>
