@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coba element form di dalam table</title>
+</head>
+
+<body>
+  <h1>Contoh elemen-elemen form pada HTML</h1>
+
+  <form>
+
+    <table cellspacing="5" cellpadding="5">
+      <tr>
+        <td> <label for="nama">Nama:</label></td>
+        <td><input type="text" name="nama" id="nama" placeholder="Masukkan nama" autocomplete="off" autofocus required></td>
+      </tr>
+      <tr>
+        <td> <label for="email">Email:</label></td>
+        <td><input type="email" name="email" id="email" placeholder="Masukkan email" autocomplete="off" autofocus required></td>
+      </tr>
+      <tr>
+        <td> <label for="password">Password:</label></td>
+        <td><input type="password" name="password" id="password" placeholder="Masukkan password" autocomplete="off" autofocus required></td>
+      </tr>
+      <tr>
+        <td> <label for="number">Angka:</label></td>
+        <td><input type="number" name="number" id="number" min="0" max="100"></td>
+      </tr>
+      <tr>
+        <td> <label for="tanggal">Tanggal:</label></td>
+        <td><input type="date" name="tanggal" id="tanggal"></td>
+      </tr>
+      <tr>
+        <td> <label for="warna">Pilih Warna:</label></td>
+        <td><input type="color" name="warna" id="warna"></td>
+      </tr>
+      <tr>
+      </tr>
+
+    </table>
+     <br>
+    <button type="submit">Kirim!</button>
+  </form>
+</body>
+
+</html>
