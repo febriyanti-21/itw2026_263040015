@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Pseudo-elements Part 1</title>
+
+  <style>
+    /* universal selector */
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* type selector (Nama Tag) */
+    h1,
+    h2,
+    h3 {
+      color: rgb(6, 52, 58);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* class selector */
+    .link-download {
+      background-color: rgb(161, 138, 24);
+      color: rgb(247, 254, 255);
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .materi-baru::after {
+      content: " [Materi Baru]";
+      color: red;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .kutipan-keren::before {
+      content:"“";
+      font-size: 30px;
+      color: rgb(7, 39, 43);
+    }
+
+    .kutipan-keren::after {
+      content: "”";
+      font-size: 30px;
+      color: rgb(7, 39, 43);
+      font-style:italic;
+      padding: 15px;
+      border-left: 4px solid dark orange;
+    }
+
+    .artikel-wpu::first-letter {
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(7, 39, 43);
+    }
+
+    .artikel-wpu::first-line {
+      font-weight: bold;
+    }
+
+    .artikel-wpu::selection {
+      background-color: rgb(7, 39, 43);
+      color: rgb(247, 254, 255);
+    }
+
+    .input-pencarian::placeholder {
+      color: gray;
+      font-style: italic;
+    }
+
+    .link-download::before {
+      content: " 📥 ";
+    }
+
+    .kutipan-keren {
+        font-size: 20px;
+        color: rgb(7, 39, 43);
+        font-style: italic;
+        padding: 15px;
+        border-left: 4px solid dark orange;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Playground Pseudo-elements</h1>
+
+  <h2>1. Konten Tambahan (::before, ::after)</h2>
+
+  <a href="#" class="link-download">Download Source Code</a>
+  <br><br>
+
+  <ul>
+    <li>HTML Dasar</li>
+    <li>CSS Layouting <span class="materi-baru"></span></li>
+    <li>JavaScript DOM</li>
+  </ul>
+
+  <div class="kutipan-keren">
+    Ngoding itu mudah, yang susah itu cari bug-nya kalau lupa titik koma.
+  </div>
+
+
+  <h2>2. Tipografi dan Teks (::first-letter, ::first-line, ::selection)</h2>
+
+  <p class="artikel-wpu">
+    Halo Pasukan Titik Koma! Selamat datang di seri tutorial WPU. Pada bagian ini, kita akan belajar bagaimana
+    memanipulasi tampilan teks menggunakan pseudo-elements tanpa perlu menambah tag span di HTML. Coba kecilkan jendela
+    browser Anda dan lihat bagaimana baris pertama secara otomatis menyesuaikan efek tebalnya. Jangan lupa, coba blok
+    (sorot) paragraf ini untuk melihat efek dari pseudo-element selection.
+  </p>
+
+
+  <h2>3. Formulir (::placeholder)</h2>
+
+  <p>Coba klik input di bawah ini, perhatikan gaya teks placeholder-nya dan bagaimana ia menghilang saat kursor aktif.
+  </p>
+  <form>
+    <input type="text" class="input-pencarian" placeholder="Cari video tutorial WPU di sini...">
+  </form>
+
+</body>
+
+</html>
