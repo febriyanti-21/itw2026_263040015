@@ -1,0 +1,351 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #1a1a1a;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, white, rgb(187, 226, 246), rgb(10, 44, 76));
+  background: url("assets/image/background.2.jpeg");
+  color: #4a151b;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  color: rgb(0, 0, 0);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+header .genre-tags {
+  margin-top: 10px;
+}
+
+header .genre-tags .tag {
+  display: inline-block;
+  padding: 6px 16px;
+  margin: 0 5px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  color: #fff9fa;
+  background-color: #05233e;
+}
+main {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main .profile-card {
+  background:
+    linear-gradient(rgba(232, 224, 213, 0.4), rgba(232, 224, 213, 0.4)),
+    url("assest/image/background-cream.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+  margin: 30px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  text-align: center;
+}
+
+main .profile-card .profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #bf737c;
+  margin-bottom: 20px;
+}
+
+main .profile-card .bio {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main .profile-card .bio p {
+  margin-bottom: 15px;
+}
+
+main .profile-card .stats {
+  margin-top: 30px;
+  white-space: nowrap;
+}
+
+main .profile-card .stats .stat-item {
+  display: inline-block;
+  width: 150px;
+  padding: 20px;
+  background-color: #185269;
+  margin: 10px 20px;
+  border-radius: 8px;
+}
+
+main .profile-card .stats .stat-item .stat-value {
+  font-size: 2em;
+  font-weight: bold;
+  color: #e8e0d5;
+}
+
+main .profile-card .stats .stat-item .stat-label {
+  font-size: 0.9em;
+  color: #e8e0d5;
+}
+
+main .discography {
+  margin: 50px 0;
+}
+
+main .discography h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #080807;
+}
+
+main .social-links h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #4a151b;
+}
+main .discography .album-list {
+  text-align: center;
+}
+
+main .discography .album-list .album-card {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: top;
+  text-align: center;
+  width: 250px;
+  min-height: 380px;
+  margin: 15px;
+  padding: 20px;
+  background:
+    linear-gradient(rgba(232, 224, 213, 0.4), rgba(232, 224, 213, 0.4)),
+    url("assest/image/background-cream.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease,
+    opacity 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+main .discography .album-list .album-card:hover {
+  transform: translateY(4px) scale(0.97);
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.25);
+  filter: brightness(1);
+}
+
+main .discography .album-list:hover .album-card:not(:hover) {
+  filter: brightness(0.65);
+  opacity: 0.85;
+  transform: scale(0.98);
+}
+main .discography .album-list .album-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  background-color: #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .discography .album-list .album-card h3 {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+main .discography .album-list .album-card h3 span {
+  display: block;
+}
+
+main .discography .album-list .album-card p {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+main .discography .album-list .album-card .btn-listen {
+  display: inline-block;
+  background-color: #05233e;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+main .discography .album-list .album-card .btn-listen:hover {
+  background-color: #333;
+  transform: translateY(3px) scale(0.95);
+}
+
+main .discography .album-list .album-card .btn-listen:active {
+  background-color: #0891b2;
+  transform: translateY(3px) scale(0.95);
+}
+
+main .social-links {
+  text-align: center;
+  padding: 40px 20px;
+  background:
+    linear-gradient(rgba(232, 224, 213, 0.4), rgba(232, 224, 213, 0.4)),
+    url("assest/image/background-cream.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+main .social-links .social-btn {
+  display: inline-block;
+  background-color: #4a151b;
+  color: white;
+  padding: 12px 30px;
+  margin: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main .social-links .social-btn:hover {
+  background-color: #333;
+  transform: translateY(3px) scale(0.95);
+}
+
+footer {
+  text-align: center;
+  background-color: #fdffff;
+  padding: 30px;
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+}
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #161299;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
